@@ -2,7 +2,7 @@ from airflow.decorators import dag, task
 from datetime import datetime, timedelta
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
-import csv
+import pandas as pd
 default_args = {
     'owner': 'fable',
     'retries': 5,
@@ -21,17 +21,10 @@ def syphon_info():
     def retrieve_data():
         # import pudb;pudb.set_trace()
         hook = PostgresHook(postgres_conn_id='airflow_postgress')
-        conn = hook.get_conn()
-        cursor = conn.cursor()
-        cursor.execute("select * from dag_run")
-        with open("dag_runs.txt", "w") as w:
-            csv_writer = csv.writer(w)
-            csv_writer.writerow([i[0] for i in cursor.description])
-            csv_writer.writerows(cursor)
-        cursor.close()
-        conn.close()
-        
-        
+        with hook.get_conn() as conn:
+            dag_run_df = pd.read_sql(con=conn, sql="select * from dag_run")
+            dag_run_df.to_csv("dag_runs.csv")
+         
     retrieve_data()
     
 syphon_info()
