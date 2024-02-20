@@ -1,0 +1,4 @@
+-- create_user.cql
+
+CREATE ROLE IF NOT EXISTS fable WITH PASSWORD = 'fable' AND LOGIN = true;
+GRANT ALL PERMISSIONS ON ALL KEYSPACES TO airflow;

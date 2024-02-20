@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 import pandas as pd
+
 default_args = {
     'owner': 'fable',
     'retries': 5,
@@ -28,3 +29,5 @@ def syphon_info():
     retrieve_data()
     
 syphon_info()
+
+
