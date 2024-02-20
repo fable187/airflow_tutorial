@@ -7,6 +7,8 @@ set shiftwidth=4        " Size of an indent
 set expandtab           " Use spaces instead of tabs
 set autoindent          " Copy indent from current line when starting a new line
 set smartindent         " Make indenting smarter again
+set foldmethod=indent
+set foldcolumn=2
 call plug#begin('~/.vim/plugged')
 
 Plug 'davidhalter/jedi-vim'
