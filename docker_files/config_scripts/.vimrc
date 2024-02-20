@@ -19,7 +19,7 @@ augroup python_settings
     autocmd FileType python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
     autocmd FileType python setlocal autoindent smartindent
     autocmd FileType python setlocal number
-    autocmd FileType python setlocal cursorline cursorcolumn
+    autocmd FileType python setlocal cursorline 
     autocmd FileType python setlocal showmatch
     autocmd FileType python setlocal foldmethod=indent
     autocmd FileType python setlocal foldlevelstart=10 foldnestmax=10
@@ -28,7 +28,7 @@ augroup python_settings
     autocmd FileType python setlocal listchars=tab:>-,trail:·,extends:#,nbsp:.
     autocmd FileType python setlocal ignorecase smartcase
     autocmd FileType python setlocal incsearch hlsearch
-    autocmd FileType python colorscheme blue
+    autocmd FileType python colorscheme desert
 augroup END
 
 " YAML-specific settings
@@ -37,34 +37,10 @@ augroup yaml_settings
     autocmd FileType yaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
     autocmd FileType yaml setlocal autoindent smartindent
     autocmd FileType yaml setlocal number
-    autocmd FileType yaml colorscheme darkblue
+    autocmd FileType yaml colorscheme blue
     " Ensure trailing spaces are visible since they can cause errors in YAML
     autocmd FileType yaml setlocal listchars=tab:>-,trail:·
     autocmd FileType yaml setlocal list
 augroup END
 
 
-
-# to apply a customization to a file type, you can use autocmd:
-
-autocmd FileType python set shiftwidth=4
-
-colorscheme darkblue
-colorscheme default
-colorscheme delek
-colorscheme desert
-colorscheme elflord
-colorscheme evening
-colorscheme industry
-colorscheme koehler
-colorscheme morning
-colorscheme murphy
-colorscheme pablo
-colorscheme peachpuff
-colorscheme ron
-colorscheme shine
-colorscheme slate
-colorscheme torte
-colorscheme zellner
-# Plug 'davidhalter/jedi-vim'
-# call plug#end()

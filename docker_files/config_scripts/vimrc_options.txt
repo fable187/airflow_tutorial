@@ -1,0 +1,24 @@
+
+# to apply a customization to a file type, you can use autocmd:
+
+autocmd FileType python set shiftwidth=4
+
+colorscheme darkblue
+colorscheme default
+colorscheme delek
+colorscheme desert
+colorscheme elflord
+colorscheme evening
+colorscheme industry
+colorscheme koehler
+colorscheme morning
+colorscheme murphy
+colorscheme pablo
+colorscheme peachpuff
+colorscheme ron
+colorscheme shine
+colorscheme slate
+colorscheme torte
+colorscheme zellner
+# Plug 'davidhalter/jedi-vim'
+# call plug#end()
