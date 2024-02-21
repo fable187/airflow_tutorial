@@ -29,6 +29,7 @@ augroup python_settings
     autocmd FileType python setlocal ignorecase smartcase
     autocmd FileType python setlocal incsearch hlsearch
     autocmd FileType python colorscheme desert
+    autocmd FileType python nnoremap <buffer> <F5> :w<CR>:!python3 %<CR>
 augroup END
 
 " YAML-specific settings
