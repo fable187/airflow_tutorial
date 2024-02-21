@@ -7,7 +7,8 @@ RUN pip install -r /requirements.txt
 USER root
 RUN apt-get update && \
     apt-get install -y vim && \
-    apt-get install -y git
+    apt-get install -y git && \
+    apt-get install -y neovim
 
 # Clean up APT when done to keep the image size small
 RUN apt-get clean && \
