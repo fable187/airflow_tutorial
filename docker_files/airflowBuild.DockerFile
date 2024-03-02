@@ -1,5 +1,6 @@
 FROM apache/airflow:2.8.0
 COPY config_scripts/ config_scripts
+COPY nvim-linux64 nvim-linux64
 COPY config_scripts/requirements.txt /requirements.txt
 
 RUN pip install --user --upgrade pip
@@ -8,8 +9,7 @@ USER root
 RUN apt-get update && \
     apt-get install -y vim && \
     apt-get install -y git && \
-    apt-get install -y neovim
-
+    apt-get install -y tmux 
 # Clean up APT when done to keep the image size small
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
