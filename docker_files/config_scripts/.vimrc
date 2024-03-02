@@ -13,6 +13,15 @@ set foldmethod=indent   " Set fold method to indent
 set foldcolumn=2        " Set fold column width
 set clipboard=unnamedplus " Use system clipboard
 
+" Highlighting for the active tab
+hi TabLineSel ctermfg=Black ctermbg=White gui=bold guifg=Black guibg=White
+
+" Highlighting for inactive tabs
+hi TabLine ctermfg=White ctermbg=DarkGray guifg=White guibg=DarkGray
+
+" Highlighting for the tabline fill
+hi TabLineFill ctermfg=White ctermbg=Black guifg=White guibg=Black
+
 " Python-specific settings
 augroup python_settings
     autocmd!
