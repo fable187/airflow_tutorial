@@ -12,6 +12,7 @@ set smartindent         " Make indenting smarter again
 set foldmethod=indent   " Set fold method to indent
 set foldcolumn=2        " Set fold column width
 set clipboard=unnamedplus " Use system clipboard
+set mouse=a
 
 " Highlighting for the active tab
 hi TabLineSel ctermfg=Black ctermbg=White gui=bold guifg=Black guibg=White
@@ -53,4 +54,14 @@ augroup yaml_settings
     autocmd FileType yaml setlocal list
 augroup END
 
+function! ToggleNetrw()
+    let netrw_winner = bufwinnr('^NERD_tree_\\d\\+$')
+    if netrw_winner != -1
+        exe netrw_winner . 'wincmd c'
+    else
+        Lexplore
+        vertical resize 30
+    endif
+endfunction
 
+nnoremap <C-e> :call ToggleNetrw()<CR>
