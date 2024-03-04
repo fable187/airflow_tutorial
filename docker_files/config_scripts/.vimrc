@@ -12,6 +12,7 @@ set smartindent         " Make indenting smarter again
 set foldmethod=indent   " Set fold method to indent
 set foldcolumn=2        " Set fold column width
 set clipboard=unnamedplus " Use system clipboard
+set relativenumber
 set mouse=a
 
 " Highlighting for the active tab
