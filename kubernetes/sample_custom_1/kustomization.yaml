@@ -1,0 +1,33 @@
+# configMapGenerator:
+# - name: example-configmap-1
+#   files:
+#   - application.properties
+#   envs:
+#   - .sample_env
+#   literals:
+#     - MY=LITERAL
+
+resources:
+- deployment.yaml
+configMapGenerator:
+- name: example-configmap-1
+  files:
+  - application.properties
+
+
+secretGenerator:
+- name: example-secret-1
+  files:
+  - password.txt
+  literals:
+    - username=admin
+    - password=fakepass
+
+generatorOptions:
+  disableNameSuffixHash: true
+  labels:
+    type: generated
+  annotations:
+    note: generated
+
+
