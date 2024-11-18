@@ -1,0 +1,63 @@
+Here’s a slightly expanded version with more detail for each point:
+
+
+---
+
+Padraic [Last Name]
+
+Senior Data Engineer | Problem Solver | AI Enthusiast
+
+Role & Current Work
+
+Padraic is a Senior Data Engineer on the Data Protection Team, where he provides consulting and design expertise on data-driven projects that increase revenue and enhance client satisfaction. His work focuses on creating scalable, innovative solutions that align with business goals and deliver measurable results.
+
+Strengths & Skills
+
+Strengths:
+
+Clear and concise communication, enabling collaboration between technical and non-technical teams.
+
+Strategic problem-solving, balancing creativity with practical implementation.
+
+Strong emotional intelligence, fostering trust and rapport with colleagues and stakeholders.
+
+Mentorship and team development, helping colleagues grow and succeed in their roles.
+
+
+Skills:
+
+Advanced proficiency in Python, Kubernetes, Alteryx, and Jira.
+
+Expertise in Agile methodologies, DevOps practices, and process automation.
+
+Building scalable data pipelines, integrating data streams, and optimizing workflows to improve operational efficiency and business outcomes.
+
+Experience with AI/ML frameworks, leveraging data insights to guide decision-making.
+
+
+
+Current Initiatives
+
+Designing and implementing scalable data solutions that drive revenue growth and operational efficiency.
+
+Collaborating with cross-functional teams to deliver projects that enhance client satisfaction and retention.
+
+Advancing technical expertise through ongoing study, including The Fundamentals of Data Engineering, to ensure alignment with industry best practices.
+
+
+Experience
+
+Padraic has over 10 years of professional experience, including his previous role as a Senior Site Reliability Engineer. In this position, he:
+
+Standardized processes and automated workflows to reduce manual toil and improve team efficiency.
+
+Mentored junior developers, fostering skill development and team cohesion.
+
+Delivered reliable, scalable solutions that supported high-demand environments and organizational growth.
+
+
+
+---
+
+This version balances more details with a professional tone. Let me know if this works or needs further tweaks!
+
